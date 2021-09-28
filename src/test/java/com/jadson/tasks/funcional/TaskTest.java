@@ -28,7 +28,7 @@ public class TaskTest {
 			driver.findElement(By.id("dueDate")).sendKeys("10/10/2021");
 			driver.findElement(By.id("saveButton")).click();
 			String mensagem = driver.findElement(By.id("message")).getText();
-			Assert.assertEquals("Sucess!",mensagem);
+			Assert.assertEquals("Success!",mensagem);
 		} finally {
 			driver.quit();
 		} 		
